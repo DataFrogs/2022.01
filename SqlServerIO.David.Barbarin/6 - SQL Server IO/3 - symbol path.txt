@@ -1,0 +1,12 @@
+srv*c:\symbols*http://msdl.microsoft.com/download/symbols
+
+
+
+1.Retrieve in a different session the OS thread ID for your (waiting) query from sys.dm_os_threads
+2.Convert the OS thread ID to a hex value
+3.Break sqlservr.exe with CTRL + BREAK
+4.Switch to the correct OS thread with the command ~~[tid]s
+5.Set a breakpoint on the specific thread  ~tid bm sqlmin!CQueryScan::GetRow
+6.Continue the execution of sqlservr.exe
+7.Wait until the breakpoint is reached
+

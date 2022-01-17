@@ -1,0 +1,2 @@
+- Exécuter procmon et filtrer sur le processus SQL Server
+- Analyser l'activité filesystem (taille de chaque opération / fonction utilisée / stack) pour checkpoint, read-ahead, index seek, log file
